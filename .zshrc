@@ -73,7 +73,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(
   git
   zsh-autosuggestions
-  history-substring-search
+  zsh-history-substring-search
   zsh-syntax-highlighting
   zsh-dircolors-solarized
 )
