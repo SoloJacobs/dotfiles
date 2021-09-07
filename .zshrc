@@ -74,6 +74,7 @@ plugins=(
   git
   zsh-autosuggestions
   history-substring-search
+  zsh-syntax-highlighting
   zsh-dircolors-solarized
 )
 
@@ -110,9 +111,6 @@ source $ZSH/oh-my-zsh.sh
 zstyle ':completion:*' menu yes select
 zstyle ':completion:*:*:kill:*' menu yes select
 zstyle ':completion:*:kill:*' force-list always
-
-source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 bindkey '^K' history-substring-search-up
 bindkey '^J' history-substring-search-down
