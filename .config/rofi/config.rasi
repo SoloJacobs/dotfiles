@@ -4,4 +4,4 @@ configuration {
  font: "OTF 22";
  }
 
-@theme "/home/sol/.config/rofi/android_my_version.rasi"
+@theme "android_my_version.rasi"
