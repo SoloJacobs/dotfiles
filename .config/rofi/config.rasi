@@ -1,7 +1,7 @@
 configuration {
  kb-row-select: "Tab";
  kb-row-tab: "";
- font: "OTF 22";
+ font: "OTF 14";
  }
 
 @theme "android_my_version.rasi"

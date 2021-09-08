@@ -191,6 +191,7 @@ client.urgent           #2f343a #2f343a #2f343a #2f343a   #2f343a
 client.placeholder      #000000 #000000 #000000 #000000   #000000
 # exec compton -cb --backend glx
 exec cbatticon
+exec nm-applet
 # for_window [class="^.*"] border pixel 0
 # gaps inner 30
 # gaps outer 0
