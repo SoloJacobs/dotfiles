@@ -1,0 +1,59 @@
+set completeopt-=preview " Remove auto opening of window
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --rust-completer --clang-completer --system-libclang' }
+
+Plug 'lervag/vimtex'
+
+Plug 'w0rp/ale'
+
+Plug 'sbdchd/neoformat'
+
+" Markdown
+Plug 'kannokanno/previm'
+
+" Colorscheme
+Plug 'tomasr/molokai'
+Plug 'arcticicestudio/nord-vim'
+Plug 'joshdick/onedark.vim'
+Plug 'nanotech/jellybeans.vim'
+Plug 'zanglg/nova.vim'
+Plug 'baines/vim-colorscheme-thaumaturge'
+
+" Initialize plugin system
+call plug#end()
+
+" https://vi.stackexchange.com/questions/25149/advice-to-add-set-nocompatible-as-first-line-of-vimrc
+if &compatible
+  " Vim defaults to `compatible` when selecting a vimrc with the command-line
+  " `-u` argument. Override this.
+  set nocompatible
+endif
+
+filetype plugin indent on
+
+set termguicolors
+colorscheme jellybeans
+
+" Alias
+" [https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work#7078429]
+cnoremap w!! w !sudo tee % > /dev/null
+command! Compile w| !g++ % && ./a.out
+command! MoPDF silent execute "!cp /tmp/'%:t:r'.pdf '%:h'" | redraw!
+
+" let &t_SI = "\<Esc>]12;yellow\x7"
+" let &t_SR = "\<Esc>]12;red\x7"
+" let &t_EI = "\<Esc>]12;blue\x7"
+let &t_EI .= "\<Esc>[2 q"
+
+" This allows for vim to automatically save folds and open them upon
+" closing the file
+" autocmd BufWinLeave * if expand("%") != "" | mkview | endif
+" autocmd BufWinEnter * if expand("%") != "" | loadview | endif
+
+" YCM configuration
+" uses config file as suggested by https://jonasdevlieghere.com/a-better-youcompleteme-config/
+let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
