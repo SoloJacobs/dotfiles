@@ -18,7 +18,6 @@ Plug 'kannokanno/previm'
 " Colorscheme
 Plug 'tomasr/molokai'
 Plug 'arcticicestudio/nord-vim'
-Plug 'joshdick/onedark.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'zanglg/nova.vim'
 Plug 'baines/vim-colorscheme-thaumaturge'
