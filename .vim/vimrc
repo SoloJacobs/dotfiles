@@ -39,9 +39,12 @@ colorscheme jellybeans
 
 " Alias
 " [https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work#7078429]
-cnoremap w!! w !sudo tee % > /dev/null
+command! Wsudo w !sudo tee % >/dev/null
 command! Compile w| !g++ % && ./a.out
 command! MoPDF silent execute "!cp /tmp/'%:t:r'.pdf '%:h'" | redraw!
+
+nnoremap <BS> <C-o>
+nnoremap <C-o> :YcmCompleter GoTo<CR>
 
 " let &t_SI = "\<Esc>]12;yellow\x7"
 " let &t_SR = "\<Esc>]12;red\x7"
