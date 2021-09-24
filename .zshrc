@@ -73,6 +73,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(
   git
   zsh-autosuggestions
+  virtualenvwrapper
   zsh-history-substring-search
   zsh-syntax-highlighting
   zsh-dircolors-solarized
@@ -112,12 +113,17 @@ zstyle ':completion:*' menu yes select
 zstyle ':completion:*:*:kill:*' menu yes select
 zstyle ':completion:*:kill:*' force-list always
 
+#eval "$(direnv hook zsh)"
+#PS1='$(show_virtual_env)'$PS1
+
 bindkey '^K' history-substring-search-up
 bindkey '^J' history-substring-search-down
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="true"
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="true"
 
-export PATH=/home/sol/bin:$PATH
+export PATH=/home/$USER/bin:$PATH
+alias vim="nvim"
+alias conf="cd $HOME/.config/nvim; vim init.vim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
