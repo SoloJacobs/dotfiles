@@ -62,6 +62,11 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
+bindsym $mod+Ctrl+$left move workspace to output left
+bindsym $mod+Ctrl+$right move workspace to output right
+bindsym $mod+Ctrl+$down move workspace to output down
+bindsym $mod+Ctrl+$up move workspace to output up
+
 # move focused window
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down

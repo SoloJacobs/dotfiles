@@ -123,6 +123,7 @@ HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="true"
 
 export PATH=/home/$USER/bin:$PATH
 alias vim="nvim"
+alias sudo='sudo -v; sudo ' # Makes it so password is renewed every time sudo is used.
 alias conf="cd $HOME/.config/nvim; vim init.vim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
