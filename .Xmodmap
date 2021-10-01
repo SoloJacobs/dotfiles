@@ -249,15 +249,21 @@ keycode 255 =
 
 clear lock
 clear control
+clear mod1
 clear mod4
+clear mod5
+
 
 keycode   9 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock
 keycode  66 = Super_L NoSymbol Super_L
-keycode 133 = Control_L NoSymbol Control_L
-keycode 134 = Control_R NoSymbol Control_R
+keycode  64 = Control_L NoSymbol Control_L
+keycode 108 = Control_R NoSymbol Control_R
+keycode 133 = Alt_L ISO_Next_Group   Alt_L ISO_Next_Group   Alt_L ISO_Next_Group
+keycode 105 = Mode_switch 
 keycode  37 = Escape NoSymbol Escape NoSymbol Escape
 
 add control = Control_L
 add control = Control_R
-add mod4 = Super_L
-
+add mod1 = Alt_L Alt_R
+add mod4 = Super_L Super_R
+add mod5 = ISO_Level3_Shift Mode_switch
