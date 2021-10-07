@@ -120,6 +120,7 @@ bindkey '^K' history-substring-search-up
 bindkey '^J' history-substring-search-down
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="true"
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="true"
+export SUDO_ASKPASS=/usr/bin/ssh-askpass
 
 export PATH=/home/$USER/bin:$PATH
 alias vim="nvim"
