@@ -255,9 +255,7 @@ keycode   9 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock
 keycode  66 = Super_L NoSymbol Super_L
 keycode 133 = Control_L NoSymbol Control_L
 keycode 134 = Control_R NoSymbol Control_R
-keycode  37 = Escape NoSymbol Escape NoSymbol Escape
+keycode  94 = Escape NoSymbol Escape NoSymbol Escape
 
-add control = Control_L
-add control = Control_R
+add control = Control_L Control_R
 add mod4 = Super_L
-
