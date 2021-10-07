@@ -73,6 +73,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(
   git
   zsh-autosuggestions
+  virtualenvwrapper
   zsh-history-substring-search
   zsh-syntax-highlighting
   zsh-dircolors-solarized
@@ -117,7 +118,7 @@ bindkey '^J' history-substring-search-down
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="true"
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="true"
 
-export PATH=/home/sol/bin:$PATH
+export PATH=/home/$USER/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
