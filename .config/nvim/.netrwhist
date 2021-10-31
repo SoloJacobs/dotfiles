@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/solo/kubernetes/custom_container/program/src'
+let g:netrw_dirhist_7='/home/solo/git/check_mk/cmk/special_agents/utils_kubernetes'
+let g:netrw_dirhist_6='/home/solo/git/check_mk/cmk/special_agents/utils_kubernetes/schemata'
+let g:netrw_dirhist_5='/home/solo/git/check_mk/cmk/special_agents/utils_kubernetes'
+let g:netrw_dirhist_4='/home/solo/git/check_mk/cmk/special_agents'
+let g:netrw_dirhist_3='/home/solo/git/check_mk/cmk'
+let g:netrw_dirhist_2='/home/solo/git/check_mk/cmk/base'
+let g:netrw_dirhist_1='/home/solo/git/check_mk/cmk/base/plugins'
+let g:netrw_dirhist_0='/home/solo/git/check_mk/cmk/base/plugins/agent_based'
+let g:netrw_dirhist_9='/home/solo/git/check_mk/cmk/base/plugins/agent_based/utils'
