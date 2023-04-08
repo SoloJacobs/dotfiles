@@ -51,9 +51,6 @@ set termguicolors
 colorscheme jellybeans
 
 " Alias
-" [https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work#7078429]
-command! Wsudo w !sudo tee % >/dev/null
-command! Compile w| !g++ % && ./a.out
 command! MoPDF silent execute "!cp /tmp/'%:t:r'.pdf '%:h'" | redraw!
 
 let mapleader = " "
