@@ -55,7 +55,6 @@ colorscheme jellybeans
 command! Wsudo w !sudo tee % >/dev/null
 command! Compile w| !g++ % && ./a.out
 command! MoPDF silent execute "!cp /tmp/'%:t:r'.pdf '%:h'" | redraw!
-command! F12 execute "!cd '%:p:h'; /home/solo/git/zeug_cmk/bin/f12" 
 
 let mapleader = " "
 
