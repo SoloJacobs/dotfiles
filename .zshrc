@@ -128,6 +128,7 @@ export PATH=/home/$USER/bin:$PATH
 alias vim="nvim"
 alias sudo='sudo -v; sudo ' # Makes it so password is renewed every time sudo is used.
 alias confif="cd $HOME/.config/nvim; vim init.vim"
+alias werk="/home/solo/git/checkmk_dev_tools/bin/werk"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
