@@ -89,14 +89,29 @@ lspconfig.rust_analyzer.setup({
                 importPrefix = "by_self",
             },
             cargo = {
-                loadOutDirsFromCheck = true
+                loadOutDirsFromCheck = true,
             },
             procMacro = {
-                enable = true
+                enable = true,
             },
-        }
+        },
     },
 })
+
+lspconfig.lua_ls.setup {
+  settings = {
+    Lua = {
+      diagnostics = {
+        -- Get the language server to recognize the `vim` global
+        globals = {'vim'},
+      },
+      -- Do not send telemetry data containing a randomized but unique identifier
+      telemetry = {
+        enable = false,
+      },
+    },
+  },
+}
 
 -- Debugging information.
 -- vim.lsp.set_log_level("debug")
