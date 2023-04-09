@@ -16,10 +16,6 @@ nnoremap <BS> <C-o>
 set colorcolumn=100
 set laststatus=2
 
-nnoremap <C-o> :LspDefinition<CR>
-nnoremap <C-k> :LspDocumentFormat<CR>
-nnoremap <C-t> :LspDocumentRangeFormat<CR>
-
 " Completion options from https://github.com/hrsh7th/nvim-cmp/
 set completeopt=menu,menuone,noselect
 
