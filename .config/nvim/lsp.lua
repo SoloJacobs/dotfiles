@@ -34,7 +34,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { "vimls" }
+local servers = { "vimls", "bashls", "pyright" }
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup({
         on_attach = on_attach,
@@ -47,14 +47,13 @@ end
 lspconfig.pylsp.setup({
     on_attach = on_attach,
     flags = {
-        debounce_text_changes = 150,
+        debounce_text_changes = 1000,
     },
     settings = {
         pylsp = {
-            configurationSources = { "flake8" },
             plugins = {
                 flake8 = {
-                    enabled = true,
+                    enabled = false,
                     config = ".flake8",
                 },
                 pyflakes = {
@@ -71,10 +70,13 @@ lspconfig.pylsp.setup({
                 },
                 mypy = {
                     enabled = true,
-                    live_mode = false,
-                    dmypy = true,
-                    strict = true,
+                    -- live_mode = false,
+                    -- dmypy = true,
+                    -- strict = true,
                 },
+		ruff = {
+                    enabled = true,
+		},
             },
         },
     },
