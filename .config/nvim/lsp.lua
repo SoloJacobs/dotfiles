@@ -77,6 +77,9 @@ lspconfig.pylsp.setup({
 		ruff = {
                     enabled = true,
 		},
+		isort = {
+                    enabled = true,
+		},
             },
         },
     },
