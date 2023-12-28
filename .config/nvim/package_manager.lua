@@ -38,4 +38,5 @@ require("lazy").setup({
     "tpope/vim-unimpaired",
     "dyng/ctrlsf.vim",
     "ctrlpvim/ctrlp.vim",
+    "simrat39/rust-tools.nvim",
 })

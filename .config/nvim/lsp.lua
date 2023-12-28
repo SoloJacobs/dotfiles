@@ -91,22 +91,14 @@ lspconfig.pylsp.setup({
     },
 })
 
-lspconfig.rust_analyzer.setup({
+
+
+local rt = require("rust-tools")
+
+rt.setup({
+  server = {
     on_attach = on_attach,
-    settings = {
-        ["rust-analyzer"] = {
-            assist = {
-                importGranularity = "module",
-                importPrefix = "by_self",
-            },
-            cargo = {
-                loadOutDirsFromCheck = true,
-            },
-            procMacro = {
-                enable = true,
-            },
-        },
-    },
+  },
 })
 
 lspconfig.lua_ls.setup {
