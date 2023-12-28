@@ -124,7 +124,7 @@ HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE="true"
 HISTORY_SUBSTRING_SEARCH_PREFIXED="false"
 export SUDO_ASKPASS=/usr/bin/ssh-askpass
 
-export PATH=/home/$USER/bin:$PATH
+export PATH=/home/solo/go/bin/:/home/$USER/bin:$PATH
 alias vim="nvim"
 alias sudo='sudo -v; sudo ' # Makes it so password is renewed every time sudo is used.
 alias confif="cd $HOME/.config/nvim; vim init.vim"
