@@ -134,3 +134,5 @@ alias werk="/home/solo/git/checkmk_dev_tools/bin/werk"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f "/home/solo/.ghcup/env" ] && source "/home/solo/.ghcup/env" # ghcup-env
