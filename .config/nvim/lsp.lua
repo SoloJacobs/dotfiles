@@ -52,9 +52,15 @@ lspconfig.pylsp.setup({
     settings = {
         pylsp = {
             plugins = {
+                autopep8 = {
+                    enabled = false,
+                },
+                pycodestyle = {
+                    enabled = false,
+                },
                 flake8 = {
                     enabled = false,
-                    config = ".flake8",
+                    -- config = ".flake8",
                 },
                 pyflakes = {
                     enabled = false,
