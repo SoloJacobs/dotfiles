@@ -116,5 +116,34 @@ lspconfig.lua_ls.setup {
   },
 }
 
+lspconfig.awk_ls.setup {}
+
+lspconfig.java_language_server.setup{}
+
+lspconfig.golangci_lint_ls.setup{}
+
+lspconfig.gopls.setup {
+  on_attach = on_attach,
+  cmd = {"gopls", "serve"},
+  filetypes = {"go", "gomod"},
+  root_dir = lspconfig.util.root_pattern("go.work", "go.mod", ".git"),
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+      gofumpt = true,
+    },
+  },
+}
+
+local json_capabilities = vim.lsp.protocol.make_client_capabilities()
+json_capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+require'lspconfig'.jsonls.setup {
+  capabilities = json_capabilities,
+}
+
 -- Debugging information.
 -- vim.lsp.set_log_level("debug")
